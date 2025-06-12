@@ -1,0 +1,42 @@
+# HELP node_cpu_seconds_total CPU time
+# TYPE node_cpu_seconds_total counter
+node_cpu_seconds_total{cpu="0",mode="idle",instance="workstation1",job="node"} 114456.3 1714320000000
+node_cpu_seconds_total{cpu="0",mode="user",instance="workstation1",job="node"} 10456.7 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",instance="workstation1",job="node"} 3456.8 1714320000000
+node_cpu_seconds_total{cpu="1",mode="idle",instance="workstation1",job="node"} 114000.5 1714320000000
+node_cpu_seconds_total{cpu="1",mode="user",instance="workstation1",job="node"} 10230.1 1714320000000
+node_cpu_seconds_total{cpu="1",mode="system",instance="workstation1",job="node"} 3333.3 1714320000000
+node_cpu_seconds_total{cpu="7",mode="idle",instance="workstation1",job="node"} 115221.2 1714320000000
+node_cpu_seconds_total{cpu="7",mode="user",instance="workstation1",job="node"} 10212.3 1714320000000
+
+# HELP node_network_receive_bytes_total Network received
+# TYPE node_network_receive_bytes_total counter
+node_network_receive_bytes_total{device="eth0",instance="workstation1",job="node"} 2048576340 1714320000000
+
+# HELP node_network_transmit_bytes_total Network transmitted
+# TYPE node_network_transmit_bytes_total counter
+node_network_transmit_bytes_total{device="eth0",instance="workstation1",job="node"} 1983762340 1714320000000
+
+# HELP node_disk_read_bytes_total Disk read bytes
+# TYPE node_disk_read_bytes_total counter
+node_disk_read_bytes_total{device="nvme0n1",instance="workstation1",job="node"} 5384763489 1714320000000
+
+# HELP node_disk_write_bytes_total Disk write bytes
+# TYPE node_disk_write_bytes_total counter
+node_disk_write_bytes_total{device="nvme0n1",instance="workstation1",job="node"} 2847562943 1714320000000
+
+# HELP process_open_fds Open file descriptors
+# TYPE process_open_fds gauge
+process_open_fds{instance="workstation1",job="node"} 412 1714320000000
+
+# HELP process_max_fds Maximum file descriptors
+# TYPE process_max_fds gauge
+process_max_fds{instance="workstation1",job="node"} 1048576 1714320000000
+
+# HELP node_scrape_duration_seconds Scrape duration seconds
+# TYPE node_scrape_duration_seconds summary
+node_scrape_duration_seconds{quantile="0.5",instance="workstation1",job="node"} 0.015 1714320000000
+node_scrape_duration_seconds{quantile="0.9",instance="workstation1",job="node"} 0.02 1714320000000
+node_scrape_duration_seconds{quantile="0.99",instance="workstation1",job="node"} 0.03 1714320000000
+node_scrape_duration_seconds_sum{instance="workstation1",job="node"} 120.7 1714320000000
+node_scrape_duration_seconds_count{instance="workstation1",job="node"} 8000 1714320000000

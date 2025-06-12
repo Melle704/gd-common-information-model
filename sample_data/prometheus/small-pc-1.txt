@@ -1,0 +1,32 @@
+# HELP node_cpu_seconds_total CPU time in seconds.
+# TYPE node_cpu_seconds_total counter
+node_cpu_seconds_total{cpu="0",mode="idle",instance="pc1",job="node"} 123456.789 1714320000000
+node_cpu_seconds_total{cpu="0",mode="user",instance="pc1",job="node"} 5678.912 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",instance="pc1",job="node"} 2345.634 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",instance="pc1",job="node"} 9312.391 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",instance="pc1",job="node"} 13921.239 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",instance="pc1",job="node"} 9803.328 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",instance="pc1",job="node"} 390122.103 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",instance="pc1",job="node"} 39801.903 1714320000000
+
+# HELP node_memory_bytes Memory usage
+# TYPE node_memory_bytes gauge
+node_memory_bytes{instance="pc1",job="node",type="available"} 8347483648 1714320000000
+node_memory_bytes{instance="pc1",job="node",type="used"} 4358737920 1714320000000
+node_memory_bytes{instance="pc1",job="node",type="cached"} 524288000 1714320000000
+
+# HELP node_disk_io_time_seconds_total Disk I/O seconds.
+# TYPE node_disk_io_time_seconds_total counter
+node_disk_io_time_seconds_total{device="sda",instance="pc1",job="node"} 856.42 1714320000000
+
+# HELP node_network_receive_bytes_total Network received
+# TYPE node_network_receive_bytes_total counter
+node_network_receive_bytes_total{device="eth0",instance="pc1",job="node"} 1038475634 1714320000000
+
+# HELP node_load1 1-minute load average.
+# TYPE node_load1 gauge
+node_load1{instance="pc1",job="node"} 0.65 1714320000000
+
+# HELP node_temperature_celsius CPU temperature in Celsius
+# TYPE node_temperature_celsius gauge
+node_temperature_celsius{instance="pc1",sensor="coretemp0"} 56.7 1714320000000

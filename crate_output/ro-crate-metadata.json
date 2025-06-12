@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@id": "./",
+  "@type": "Dataset",
+  "name": "Data Center Metrics Summary Crate",
+  "hasPart": [
+    {
+      "@id": "./968c6f37-7f3f-4a79-b848-2cfa41012ee2_datacenter-4.jsonld",
+      "@type": "File",
+      "encodingFormat": "application/ld+json"
+    }
+  ]
+}

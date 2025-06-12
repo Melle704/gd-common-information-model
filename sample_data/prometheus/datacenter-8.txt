@@ -1,0 +1,71 @@
+# HELP datacenter_temp_celsius Temperature per rack (°C)
+# TYPE datacenter_temp_celsius gauge
+datacenter_temp_celsius{rack="X1",region="eu-west"} 21.9 1714320000000
+datacenter_temp_celsius{rack="X2",region="eu-west"} 22.4 1714320000000
+
+# HELP datacenter_power_watts Power usage per rack
+# TYPE datacenter_power_watts gauge
+datacenter_power_watts{rack="X1",region="eu-west"} 13750 1714320000000
+datacenter_power_watts{rack="X2",region="eu-west"} 14020 1714320000000
+
+# HELP datacenter_pue PUE
+# TYPE datacenter_pue gauge
+datacenter_pue 1.32 1714320000000
+
+# HELP datacenter_ere ERE
+# TYPE datacenter_ere gauge
+datacenter_ere 1.10 1714320000000
+
+# HELP datacenter_cue CUE
+# TYPE datacenter_cue gauge
+datacenter_cue 0.20 1714320000000
+
+# HELP node_cpu_usage_percent CPU usage per server
+# TYPE node_cpu_usage_percent gauge
+node_cpu_usage_percent{server="X1-n1",rack="X1"} 66 1714320000000
+node_cpu_usage_percent{server="X2-n1",rack="X2"} 64 1714320000000
+
+# HELP node_memory_Active_bytes Active memory per server
+# TYPE node_memory_Active_bytes gauge
+node_memory_Active_bytes{server="X1-n1",rack="X1"} 2684354560 1714320000000
+node_memory_Active_bytes{server="X2-n1",rack="X2"} 2147483648 1714320000000
+
+# HELP node_disk_read_bytes_total Disk read bytes
+# TYPE node_disk_read_bytes_total counter
+node_disk_read_bytes_total{device="nvme0n1",server="X1-n2",rack="X1"} 3987654321 1714320000000
+
+# HELP node_disk_write_bytes_total Disk write bytes
+# TYPE node_disk_write_bytes_total counter
+node_disk_write_bytes_total{device="nvme0n1",server="X1-n2",rack="X1"} 2876543210 1714320000000
+
+# HELP node_network_receive_bytes_total Network receive bytes
+# TYPE node_network_receive_bytes_total counter
+node_network_receive_bytes_total{device="eth0",server="X2-n2",rack="X2"} 7654321098 1714320000000
+
+# HELP node_network_transmit_bytes_total Network transmit bytes
+# TYPE node_network_transmit_bytes_total counter
+node_network_transmit_bytes_total{device="eth0",server="X2-n2",rack="X2"} 6543210987 1714320000000
+
+# HELP kubernetes_pods_running Pods running in cluster
+# TYPE kubernetes_pods_running gauge
+kubernetes_pods_running{cluster="eu-west-stage",rack="X1"} 500 1714320000000
+
+# HELP service_http_requests_total HTTP requests per service
+# TYPE service_http_requests_total counter
+service_http_requests_total{service="test-api",method="GET",code="200",cluster="eu-west-stage"} 12345 1714320000000
+
+# HELP service_latency_seconds Service latency histogram
+# TYPE service_latency_seconds histogram
+service_latency_seconds_bucket{service="test-api",le="0.1"} 4500
+service_latency_seconds_bucket{service="test-api",le="0.5"} 8000
+service_latency_seconds_bucket{service="test-api",le="1"} 9500
+service_latency_seconds_sum{service="test-api"} 320.4
+service_latency_seconds_count{service="test-api"} 9500
+
+# HELP etcd_server_has_leader etcd cluster has leader
+# TYPE etcd_server_has_leader gauge
+etcd_server_has_leader{instance="etcd-west-1",cluster="eu-west"} 1 1714320000000
+
+# HELP load_balancer_http_requests_total Load balancer total requests
+# TYPE load_balancer_http_requests_total counter
+load_balancer_http_requests_total{load_balancer="xlb1",region="eu-west"} 98765432 1714320000000

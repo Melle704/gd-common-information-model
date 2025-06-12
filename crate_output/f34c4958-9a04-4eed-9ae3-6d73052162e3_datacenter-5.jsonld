@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "@context": {
+      "@vocab": "http://example.org/metrics#",
+      "MetricsSummary": "http://example.org/metrics#MetricsSummary"
+    }
+  },
+  "@id": "urn:metrics:f34c4958-9a04-4eed-9ae3-6d73052162e3_datacenter-5",
+  "@type": "MetricsSummary",
+  "metrics_summary": {
+    "Energy_Metrics": {
+      "total_energy_consumed_kwh": 58.870000000000005,
+      "daily_energy_consumed_kwh": null,
+      "energy_reuse_factor": null,
+      "cooling_peak_load_kw": 15.02
+    },
+    "Efficiency_Metrics": {
+      "pue": 1.35,
+      "ere": null,
+      "cer": null,
+      "temperature_avg_celsius": 22.95
+    },
+    "Carbon_Emission_Metrics": {
+      "cue": null,
+      "gec": null,
+      "total_co2_emissions_kg": 4800.0
+    },
+    "Water_Usage_Metrics": {
+      "wue": 0.42,
+      "total_water_consumption": 23000.0,
+      "water_reuse": null
+    },
+    "Resource_Utilisation_Metrics": {
+      "cpu_utilization_percent": 71.66666666666667,
+      "server_utilization_percent": null,
+      "memory_total_gb": 8.589934592,
+      "memory_avg_used_gb": 2.68435456,
+      "storage_total_tb": null,
+      "storage_avg_used_tb": null,
+      "storage_iops": 11000.0,
+      "network_efficiency": null,
+      "gpu_utilization_percent": 57.5,
+      "disk_read_bytes_gb": 4.987654321,
+      "disk_write_bytes_gb": 1.8765432100000001
+    },
+    "Lifecycle_Metrics": {
+      "equipment_age": null,
+      "sustainability_rating": null,
+      "embedded_carbon_footprint": null
+    },
+    "Data_Movement_Metrics": {
+      "data_volume_transferred": 16.419753207,
+      "carbon_per_gb": null,
+      "inter_site_transfers": null
+    },
+    "Environmental_Metrics": {
+      "humidity_avg_percent": 46.1,
+      "fan_speed_avg_rpm": 3212.5
+    },
+    "Storage_Metrics": {},
+    "Orchestration_Metrics": {
+      "pods_running": 1750.0,
+      "etcd_leader_present": 1.0
+    },
+    "Service_Metrics": {
+      "http_requests_total": 11111110.0,
+      "avg_latency_seconds": 0.04453680412371134
+    },
+    "Database_Metrics": {}
+  }
+}

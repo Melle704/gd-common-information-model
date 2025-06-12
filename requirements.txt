@@ -1,0 +1,7 @@
+rdflib
+rdflib-jsonld
+aiofiles
+python-multipart
+fastapi
+uvicorn
+pyyaml

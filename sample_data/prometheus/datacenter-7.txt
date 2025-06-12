@@ -1,0 +1,106 @@
+# HELP dc_temp_c Temperature per rack (Celsius)
+# TYPE dc_temp_c gauge
+dc_temp_c{rack="west1",region="us-west"} 25.4 1714320000000
+dc_temp_c{rack="west2",region="us-west"} 25.8 1714320000000
+dc_temp_c{rack="west3",region="us-west"} 26.1 1714320000000
+
+# HELP dc_humidity Percentage humidity per rack
+# TYPE dc_humidity gauge
+dc_humidity{rack="west1",region="us-west"} 50.1 1714320000000
+dc_humidity{rack="west2",region="us-west"} 49.8 1714320000000
+dc_humidity{rack="west3",region="us-west"} 51.2 1714320000000
+
+# HELP dc_power_w Power usage per rack
+# TYPE dc_power_w gauge
+dc_power_w{rack="west1",region="us-west"} 14000 1714320000000
+dc_power_w{rack="west2",region="us-west"} 14250 1714320000000
+dc_power_w{rack="west3",region="us-west"} 13900 1714320000000
+
+# HELP dc_pue Power Usage Effectiveness
+# TYPE dc_pue gauge
+dc_pue 1.38 1714320000000
+
+# HELP dc_ere Energy Reuse Effectiveness
+# TYPE dc_ere gauge
+dc_ere 1.15 1714320000000
+
+# HELP dc_cer Carbon Emission Reduction
+# TYPE dc_cer gauge
+dc_cer 0.78 1714320000000
+
+# HELP dc_cue Carbon Usage Effectiveness
+# TYPE dc_cue gauge
+dc_cue 0.22 1714320000000
+
+# HELP dc_network_eff Network efficiency (%)
+# TYPE dc_network_eff gauge
+dc_network_eff 88 1714320000000
+
+# HELP dc_inter_site_gb Inter-site data transfers (GB)
+# TYPE dc_inter_site_gb gauge
+dc_inter_site_gb 60 1714320000000
+
+# HELP dc_total_co2_kg Total CO₂ emissions (kg)
+# TYPE dc_total_co2_kg gauge
+dc_total_co2_kg 5200 1714320000000
+
+# HELP dc_water_liters Water consumption (L)
+# TYPE dc_water_liters gauge
+dc_water_liters 24000 1714320000000
+
+# HELP node_cpu_seconds_total CPU seconds per server
+# TYPE node_cpu_seconds_total counter
+node_cpu_seconds_total{cpu="0",mode="user",server="west1-n1",rack="west1"} 134679852 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",server="west1-n1",rack="west1"} 57896321 1714320000000
+node_cpu_seconds_total{cpu="0",mode="idle",server="west1-n1",rack="west1"} 912345678 1714320000000
+
+# HELP node_cpu_usage_percent CPU usage percent
+# TYPE node_cpu_usage_percent gauge
+node_cpu_usage_percent{server="west1-n1",rack="west1"} 70 1714320000000
+node_cpu_usage_percent{server="west2-n1",rack="west2"} 68 1714320000000
+node_cpu_usage_percent{server="west3-n1",rack="west3"} 74 1714320000000
+
+# HELP node_memory_Active_bytes Active memory
+# TYPE node_memory_Active_bytes gauge
+node_memory_Active_bytes{server="west1-n1",rack="west1"} 3019898880 1714320000000
+node_memory_Active_bytes{server="west2-n1",rack="west2"} 2147483648 1714320000000
+
+# HELP node_disk_iops IOPS
+# TYPE node_disk_iops gauge
+node_disk_iops{device="sda",server="west3-n2",rack="west3"} 11500 1714320000000
+
+# HELP node_network_receive_bytes_total Network RX bytes
+# TYPE node_network_receive_bytes_total counter
+node_network_receive_bytes_total{device="eth1",server="west2-n3",rack="west2"} 9876543210 1714320000000
+
+# HELP node_network_transmit_bytes_total Network TX bytes
+# TYPE node_network_transmit_bytes_total counter
+node_network_transmit_bytes_total{device="eth1",server="west2-n3",rack="west2"} 8765432109 1714320000000
+
+# HELP kubernetes_pods_running Pods running
+# TYPE kubernetes_pods_running gauge
+kubernetes_pods_running{cluster="us-west-prod",rack="west2"} 1300 1714320000000
+kubernetes_pods_running{cluster="us-west-prod",rack="west3"} 1250 1714320000000
+
+# HELP gpu_utilization_percent GPU utilization
+# TYPE gpu_utilization_percent gauge
+gpu_utilization_percent{gpu="0",server="west1-n2",rack="west1"} 48 1714320000000
+gpu_utilization_percent{gpu="1",server="west1-n2",rack="west1"} 52 1714320000000
+
+# HELP service_http_requests_total HTTP requests total
+# TYPE service_http_requests_total counter
+service_http_requests_total{service="api-gateway",method="GET",code="200",cluster="us-west-prod"} 12345678 1714320000000
+service_http_requests_total{service="order-service",method="POST",code="201",cluster="us-west-prod"} 5678901 1714320000000
+service_http_requests_total{service="search-service",method="GET",code="500",cluster="us-west-prod"} 2345 1714320000000
+
+# HELP service_latency_seconds Service latency histogram
+# TYPE service_latency_seconds histogram
+service_latency_seconds_bucket{service="api-gateway",le="0.1"} 600000
+service_latency_seconds_bucket{service="api-gateway",le="0.5"} 850000
+service_latency_seconds_bucket{service="api-gateway",le="1"} 920000
+service_latency_seconds_sum{service="api-gateway"} 48200.5
+service_latency_seconds_count{service="api-gateway"} 920000
+
+# HELP etcd_server_has_leader etcd leadership
+# TYPE etcd_server_has_leader gauge
+etcd_server_has_leader{instance="etcd-west-1",cluster="us-west"} 1 1714320000000

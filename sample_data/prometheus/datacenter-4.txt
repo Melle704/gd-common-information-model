@@ -1,0 +1,169 @@
+# HELP datacenter_temperature_celsius Temperature of each rack (Celsius)
+# TYPE datacenter_temperature_celsius gauge
+datacenter_temperature_celsius{rack="rack1",region="us-east"} 24.3 1714320000000
+datacenter_temperature_celsius{rack="rack2",region="us-east"} 25.0 1714320000000
+datacenter_temperature_celsius{rack="rack3",region="us-east"} 24.8 1714320000000
+
+# HELP datacenter_power_usage_watts Power usage per rack
+# TYPE datacenter_power_usage_watts gauge
+datacenter_power_usage_watts{rack="rack1",region="us-east"} 14800 1714320000000
+datacenter_power_usage_watts{rack="rack2",region="us-east"} 14500 1714320000000
+datacenter_power_usage_watts{rack="rack3",region="us-east"} 15200 1714320000000
+
+# HELP datacenter_pue Power Usage Effectiveness
+# TYPE datacenter_pue gauge
+datacenter_pue 1.40 1714320000000
+
+# HELP datacenter_ere Energy Reuse Effectiveness
+# TYPE datacenter_ere gauge
+datacenter_ere 1.20 1714320000000
+
+# HELP datacenter_cer Carbon Emission Reduction
+# TYPE datacenter_cer gauge
+datacenter_cer 0.80 1714320000000
+
+# HELP datacenter_cue Carbon Usage Effectiveness
+# TYPE datacenter_cue gauge
+datacenter_cue 0.25 1714320000000
+
+# HELP datacenter_gec Grid Emission Coefficient
+# TYPE datacenter_gec gauge
+datacenter_gec 0.25 1714320000000
+
+# HELP datacenter_total_co2_emissions_kg Total CO₂ emissions (kg)
+# TYPE datacenter_total_co2_emissions_kg gauge
+datacenter_total_co2_emissions_kg 5000 1714320000000
+
+# HELP datacenter_water_usage_liters Total water consumption (L)
+# TYPE datacenter_water_usage_liters gauge
+datacenter_water_usage_liters 25000 1714320000000
+
+# HELP datacenter_water_reuse_liters Water reused (L)
+# TYPE datacenter_water_reuse_liters gauge
+datacenter_water_reuse_liters 15000 1714320000000
+
+# HELP datacenter_wue Water Usage Effectiveness
+# TYPE datacenter_wue gauge
+datacenter_wue 0.45 1714320000000
+
+# HELP datacenter_equipment_age_years Equipment age in years
+# TYPE datacenter_equipment_age_years gauge
+datacenter_equipment_age_years 3 1714320000000
+
+# HELP datacenter_sustainability_rating Sustainability rating (1–5)
+# TYPE datacenter_sustainability_rating gauge
+datacenter_sustainability_rating 4.5 1714320000000
+
+# HELP datacenter_embedded_carbon_footprint_kg Embedded carbon footprint (kg)
+# TYPE datacenter_embedded_carbon_footprint_kg gauge
+datacenter_embedded_carbon_footprint_kg 10000 1714320000000
+
+# HELP datacenter_carbon_per_gb Carbon emissions per GB transferred
+# TYPE datacenter_carbon_per_gb gauge
+datacenter_carbon_per_gb 0.05 1714320000000
+
+# HELP datacenter_inter_site_transfers_gb Inter-site data transfers (GB)
+# TYPE datacenter_inter_site_transfers_gb gauge
+datacenter_inter_site_transfers_gb 50 1714320000000
+
+# HELP datacenter_network_efficiency Network efficiency (%)
+# TYPE datacenter_network_efficiency gauge
+datacenter_network_efficiency 85 1714320000000
+
+# HELP node_cpu_seconds_total CPU seconds by server
+# TYPE node_cpu_seconds_total counter
+node_cpu_seconds_total{cpu="0",mode="user",server="rack1-node1",rack="rack1",region="us-east"} 123456789 171432000
+node_cpu_seconds_total{cpu="0",mode="system",server="rack1-node1",rack="rack1",region="us-east"} 56789321 171432000
+node_cpu_seconds_total{cpu="0",mode="idle",server="rack1-node1",rack="rack1",region="us-east"} 876543210 171432000
+
+# HELP node_cpu_usage_percent CPU usage percent per server
+# TYPE node_cpu_usage_percent gauge
+node_cpu_usage_percent{server="rack1-node1",rack="rack1"} 75 1714320000000
+node_cpu_usage_percent{server="rack1-node2",rack="rack1"} 65 1714320000000
+node_cpu_usage_percent{server="rack2-node1",rack="rack2"} 80 1714320000000
+
+# HELP node_memory_Active_bytes Memory usage per server
+# TYPE node_memory_Active_bytes gauge
+node_memory_Active_bytes{server="rack1-node1",rack="rack1",region="us-east"} 3221225472 1714320000000
+node_memory_Active_bytes{server="rack1-node2",rack="rack1",region="us-east"} 4294967296 1714320000000
+
+# HELP node_memory_MemTotal_bytes Total memory per server
+# TYPE node_memory_MemTotal_bytes gauge
+node_memory_MemTotal_bytes{server="rack1-node1",rack="rack1"} 8589934592 1714320000000
+node_memory_MemTotal_bytes{server="rack1-node2",rack="rack1"} 8589934592 1714320000000
+
+# HELP node_disk_read_bytes_total Disk read total bytes
+# TYPE node_disk_read_bytes_total counter
+node_disk_read_bytes_total{device="sda",server="rack2-node3",rack="rack2",region="us-east"} 5489673846 1714320000000
+
+# HELP node_disk_write_bytes_total Disk write total bytes
+# TYPE node_disk_write_bytes_total counter
+node_disk_write_bytes_total{device="sda",server="rack2-node3",rack="rack2",region="us-east"} 2147483648 1714320000000
+
+# HELP node_disk_iops IOPS per storage device
+# TYPE node_disk_iops gauge
+node_disk_iops{device="sda",server="rack2-node3",rack="rack2"} 12000 1714320000000
+
+# HELP node_network_receive_bytes_total Network receive bytes
+# TYPE node_network_receive_bytes_total counter
+node_network_receive_bytes_total{device="eth0",server="rack3-node5",rack="rack3",region="us-east"} 10737418240 1714320000000
+
+# HELP node_network_transmit_bytes_total Network transmit bytes
+# TYPE node_network_transmit_bytes_total counter
+node_network_transmit_bytes_total{device="eth0",server="rack3-node5",rack="rack3",region="us-east"} 8533432456 1714320000000
+
+# HELP kubernetes_pods_running Number of pods running
+# TYPE kubernetes_pods_running gauge
+kubernetes_pods_running{cluster="us-east-prod",rack="rack2"} 1250 1714320000000
+kubernetes_pods_running{cluster="us-east-prod",rack="rack3"} 1100 1714320000000
+
+# HELP service_http_requests_total HTTP requests total per service
+# TYPE service_http_requests_total counter
+service_http_requests_total{service="auth-service",method="GET",code="200",cluster="us-east-prod"} 9876543 1714320000000
+service_http_requests_total{service="billing-service",method="POST",code="201",cluster="us-east-prod"} 4567890 1714320000000
+service_http_requests_total{service="inventory-service",method="GET",code="500",cluster="us-east-prod"} 1203 1714320000000
+
+# HELP service_latency_seconds Service latency histogram
+# TYPE service_latency_seconds histogram
+service_latency_seconds_bucket{service="auth-service",le="0.1"} 800000
+service_latency_seconds_bucket{service="auth-service",le="0.5"} 950000
+service_latency_seconds_bucket{service="auth-service",le="1"} 998000
+service_latency_seconds_sum{service="auth-service"} 55200.3
+service_latency_seconds_count{service="auth-service"} 998000
+
+# HELP database_queries_total Database queries
+# TYPE database_queries_total counter
+database_queries_total{db="postgres",query_type="select",server="rack1-db1",rack="rack1"} 57891234 1714320000000
+database_queries_total{db="postgres",query_type="insert",server="rack1-db1",rack="rack1"} 6789123 1714320000000
+
+# HELP database_connection_pool_active Active DB connections
+# TYPE database_connection_pool_active gauge
+database_connection_pool_active{db="postgres",server="rack1-db1",rack="rack1"} 45 1714320000000
+
+# HELP load_balancer_http_requests_total Load balancer request count
+# TYPE load_balancer_http_requests_total counter
+load_balancer_http_requests_total{load_balancer="lb1",region="us-east"} 145678901 1714320000000
+
+# HELP storage_node_status Storage server health (1=up, 0=down)
+# TYPE storage_node_status gauge
+storage_node_status{server="rack3-storage1",rack="rack3",region="us-east"} 1 1714320000000
+storage_node_status{server="rack3-storage2",rack="rack3",region="us-east"} 1 1714320000000
+
+# HELP storage_node_capacity_bytes Storage capacity per node
+# TYPE storage_node_capacity_bytes gauge
+storage_node_capacity_bytes{server="rack3-storage1",rack="rack3",region="us-east"} 1099511627776 1714320000000
+storage_node_capacity_bytes{server="rack3-storage2",rack="rack3",region="us-east"} 1099511627776 1714320000000
+
+# HELP etcd_server_has_leader etcd cluster leadership
+# TYPE etcd_server_has_leader gauge
+etcd_server_has_leader{instance="etcd1",cluster="us-east"} 1 1714320000000
+
+# HELP api_gateway_requests_total API gateway request total
+# TYPE api_gateway_requests_total counter
+api_gateway_requests_total{api="v1",method="GET",region="us-east"} 456789023 1714320000000
+api_gateway_requests_total{api="v1",method="POST",region="us-east"} 15678934 1714320000000
+
+# HELP node_load1 1-minute load average
+# TYPE node_load1 gauge
+node_load1{server="rack2-node5",rack="rack2",region="us-east"} 1.5 1714320000000
+node_load1{server="rack3-node2",rack="rack3",region="us-east"} 0.8 1714320000000

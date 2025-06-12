@@ -1,0 +1,191 @@
+[
+  {
+    "metricName": "Total Energy Consumed",
+    "metricID": "iso30134:TotalEnergyConsumedKWh",
+    "unitOfMeasurement": "kWh",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Daily Energy Consumed",
+    "metricID": "iso30134:DailyEnergyConsumedKWh",
+    "unitOfMeasurement": "kWh",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Energy Reuse Factor",
+    "metricID": "iso30134:EnergyReuseFactor",
+    "unitOfMeasurement": "ratio",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Cooling Peak Load",
+    "metricID": "en50600:CoolingPeakLoadKw",
+    "unitOfMeasurement": "kW",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "EN 50600"
+  },
+  {
+    "metricName": "Power Usage Effectiveness (PUE)",
+    "metricID": "iso30134:PUE",
+    "unitOfMeasurement": "ratio",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Energy Reuse Effectiveness (ERE)",
+    "metricID": "iso30134:ERE",
+    "unitOfMeasurement": "ratio",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Cooling Efficiency Ratio (CER)",
+    "metricID": "iso30134:CER",
+    "unitOfMeasurement": "ratio",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Carbon Usage Effectiveness (CUE)",
+    "metricID": "iso30134:CUE",
+    "unitOfMeasurement": "kgCO2e/kWh",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Grid Emissions Coefficient (GEC)",
+    "metricID": "jrc:GEC",
+    "unitOfMeasurement": "kgCO2e/kWh",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  },
+  {
+    "metricName": "Total CO₂ Emissions",
+    "metricID": "jrc:TotalCo2EmissionsKg",
+    "unitOfMeasurement": "kg",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  },
+  {
+    "metricName": "Water Usage Effectiveness (WUE)",
+    "metricID": "iso30134:WUE",
+    "unitOfMeasurement": "L/kWh",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Total Water Consumption",
+    "metricID": "iso30134:TotalWaterConsumption",
+    "unitOfMeasurement": "L",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Water Reuse",
+    "metricID": "iso30134:WaterReuse",
+    "unitOfMeasurement": "L",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "CPU Utilization",
+    "metricID": "iso30134:CPUUtilizationPercent",
+    "unitOfMeasurement": "%",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Server Utilization",
+    "metricID": "iso30134:ServerUtilizationPercent",
+    "unitOfMeasurement": "%",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "ISO/IEC 30134-1:2016"
+  },
+  {
+    "metricName": "Total Memory",
+    "metricID": "egi:MemoryTotalGB",
+    "unitOfMeasurement": "GB",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "EGI"
+  },
+  {
+    "metricName": "Average Memory Used",
+    "metricID": "egi:MemoryAvgUsedGB",
+    "unitOfMeasurement": "GB",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "EGI"
+  },
+  {
+    "metricName": "Total Storage",
+    "metricID": "egi:StorageTotalTB",
+    "unitOfMeasurement": "TB",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "EGI"
+  },
+  {
+    "metricName": "Average Storage Used",
+    "metricID": "egi:StorageAvgUsedTB",
+    "unitOfMeasurement": "TB",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "EGI"
+  },
+  {
+    "metricName": "Storage IOPS",
+    "metricID": "egi:StorageIOPS",
+    "unitOfMeasurement": "IOPS",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "EGI"
+  },
+  {
+    "metricName": "Network Efficiency",
+    "metricID": "egi:NetworkEfficiency",
+    "unitOfMeasurement": "ratio",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "EGI"
+  },
+  {
+    "metricName": "Equipment Age",
+    "metricID": "jrc:EquipmentAge",
+    "unitOfMeasurement": "years",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  },
+  {
+    "metricName": "Sustainability Rating",
+    "metricID": "jrc:SustainabilityRating",
+    "unitOfMeasurement": "score",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  },
+  {
+    "metricName": "Embedded Carbon Footprint",
+    "metricID": "jrc:EmbeddedCarbonFootprint",
+    "unitOfMeasurement": "kgCO2e",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  },
+  {
+    "metricName": "Data Volume Transferred",
+    "metricID": "jrc:DataVolumeTransferred",
+    "unitOfMeasurement": "GB",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  },
+  {
+    "metricName": "Carbon per GB Transferred",
+    "metricID": "jrc:CarbonPerGB",
+    "unitOfMeasurement": "kgCO2e/GB",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  },
+  {
+    "metricName": "Inter-site Transfers",
+    "metricID": "jrc:InterSiteTransfers",
+    "unitOfMeasurement": "count",
+    "derivedFrom": "raw_metric_logs",
+    "standard": "DCAT-AP-JRC"
+  }
+]

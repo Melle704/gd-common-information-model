@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@context": {
+      "@vocab": "http://example.org/metrics#",
+      "MetricsSummary": "http://example.org/metrics#MetricsSummary"
+    }
+  },
+  "@id": "urn:metrics:e1f4ac78-6434-4552-9f87-4fe2a4f13eaf_datacenter-6",
+  "@type": "MetricsSummary",
+  "metrics_summary": {
+    "Energy_Metrics": {
+      "total_energy_consumed_kwh": 31.85,
+      "daily_energy_consumed_kwh": null,
+      "energy_reuse_factor": null,
+      "cooling_peak_load_kw": null
+    },
+    "Efficiency_Metrics": {
+      "pue": 1.5,
+      "ere": null,
+      "cer": null,
+      "temperature_avg_celsius": 28.9
+    },
+    "Carbon_Emission_Metrics": {
+      "cue": null,
+      "gec": null,
+      "total_co2_emissions_kg": null
+    },
+    "Water_Usage_Metrics": {
+      "wue": null,
+      "total_water_consumption": null,
+      "water_reuse": null
+    },
+    "Resource_Utilisation_Metrics": {
+      "cpu_utilization_percent": 80.0,
+      "server_utilization_percent": null,
+      "memory_total_gb": null,
+      "memory_avg_used_gb": null,
+      "storage_total_tb": null,
+      "storage_avg_used_tb": null,
+      "storage_iops": null,
+      "network_efficiency": null,
+      "memory_free_gb": 3.2212254720000004,
+      "disk_read_ops": 1234567.0,
+      "disk_write_ops": 2345678.0,
+      "load_avg_1": 1.8
+    },
+    "Lifecycle_Metrics": {
+      "equipment_age": null,
+      "sustainability_rating": null,
+      "embedded_carbon_footprint": null
+    },
+    "Data_Movement_Metrics": {
+      "data_volume_transferred": null,
+      "carbon_per_gb": null,
+      "inter_site_transfers": null
+    },
+    "Environmental_Metrics": {},
+    "Storage_Metrics": {},
+    "Orchestration_Metrics": {},
+    "Service_Metrics": {
+      "api_requests_total": 23456789.0
+    },
+    "Database_Metrics": {
+      "db_connections_active": 55.0
+    }
+  }
+}

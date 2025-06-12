@@ -1,0 +1,112 @@
+# HELP datacenter_temperature_celsius Temperature of each rack (Celsius)
+# TYPE datacenter_temperature_celsius gauge
+datacenter_temperature_celsius{rack="r1",region="eu-central"} 22.5 1714320000000
+datacenter_temperature_celsius{rack="r2",region="eu-central"} 23.1 1714320000000
+datacenter_temperature_celsius{rack="r3",region="eu-central"} 22.9 1714320000000
+datacenter_temperature_celsius{rack="r4",region="eu-central"} 23.3 1714320000000
+
+# HELP datacenter_humidity_percent Relative humidity per rack
+# TYPE datacenter_humidity_percent gauge
+datacenter_humidity_percent{rack="r1",region="eu-central"} 45.2 1714320000000
+datacenter_humidity_percent{rack="r2",region="eu-central"} 47.8 1714320000000
+datacenter_humidity_percent{rack="r3",region="eu-central"} 44.9 1714320000000
+datacenter_humidity_percent{rack="r4",region="eu-central"} 46.5 1714320000000
+
+# HELP datacenter_power_usage_watts Power usage per rack
+# TYPE datacenter_power_usage_watts gauge
+datacenter_power_usage_watts{rack="r1",region="eu-central"} 14200 1714320000000
+datacenter_power_usage_watts{rack="r2",region="eu-central"} 14900 1714320000000
+datacenter_power_usage_watts{rack="r3",region="eu-central"} 14750 1714320000000
+datacenter_power_usage_watts{rack="r4",region="eu-central"} 15020 1714320000000
+
+# HELP datacenter_fan_speed_rpm Fan speed per rack (RPM)
+# TYPE datacenter_fan_speed_rpm gauge
+datacenter_fan_speed_rpm{rack="r1",region="eu-central"} 3200 1714320000000
+datacenter_fan_speed_rpm{rack="r2",region="eu-central"} 3100 1714320000000
+datacenter_fan_speed_rpm{rack="r3",region="eu-central"} 3300 1714320000000
+datacenter_fan_speed_rpm{rack="r4",region="eu-central"} 3250 1714320000000
+
+# HELP datacenter_pue Power Usage Effectiveness
+# TYPE datacenter_pue gauge
+datacenter_pue 1.35 1714320000000
+
+# HELP datacenter_wue Water Usage Effectiveness
+# TYPE datacenter_wue gauge
+datacenter_wue 0.42 1714320000000
+
+# HELP datacenter_total_co2_emissions_kg Total CO₂ emissions (kg)
+# TYPE datacenter_total_co2_emissions_kg gauge
+datacenter_total_co2_emissions_kg 4800 1714320000000
+
+# HELP datacenter_water_usage_liters Total water consumption (L)
+# TYPE datacenter_water_usage_liters gauge
+datacenter_water_usage_liters 23000 1714320000000
+
+# HELP node_cpu_seconds_total CPU seconds by server
+# TYPE node_cpu_seconds_total counter
+node_cpu_seconds_total{cpu="0",mode="user",server="r1-n1",rack="r1",region="eu-central"} 112233445 1714320000000
+node_cpu_seconds_total{cpu="0",mode="system",server="r1-n1",rack="r1",region="eu-central"} 55443322 1714320000000
+node_cpu_seconds_total{cpu="0",mode="idle",server="r1-n1",rack="r1",region="eu-central"} 998877665 1714320000000
+
+# HELP node_cpu_usage_percent CPU usage percent per server
+# TYPE node_cpu_usage_percent gauge
+node_cpu_usage_percent{server="r1-n1",rack="r1"} 72 1714320000000
+node_cpu_usage_percent{server="r2-n1",rack="r2"} 68 1714320000000
+node_cpu_usage_percent{server="r3-n1",rack="r3"} 75 1714320000000
+
+# HELP node_memory_Active_bytes Memory usage per server
+# TYPE node_memory_Active_bytes gauge
+node_memory_Active_bytes{server="r1-n1",rack="r1",region="eu-central"} 2147483648 1714320000000
+node_memory_Active_bytes{server="r2-n1",rack="r2",region="eu-central"} 3221225472 1714320000000
+
+# HELP node_memory_MemTotal_bytes Total memory per server
+# TYPE node_memory_MemTotal_bytes gauge
+node_memory_MemTotal_bytes{server="r1-n1",rack="r1"} 8589934592 1714320000000
+node_memory_MemTotal_bytes{server="r2-n1",rack="r2"} 8589934592 1714320000000
+
+# HELP node_disk_iops IOPS per storage device
+# TYPE node_disk_iops gauge
+node_disk_iops{device="sda",server="r3-n2",rack="r3"} 11000 1714320000000
+
+# HELP node_disk_read_bytes_total Disk read total bytes
+# TYPE node_disk_read_bytes_total counter
+node_disk_read_bytes_total{device="sda",server="r2-n1",rack="r2",region="eu-central"} 4987654321 1714320000000
+
+# HELP node_disk_write_bytes_total Disk write total bytes
+# TYPE node_disk_write_bytes_total counter
+node_disk_write_bytes_total{device="sda",server="r2-n1",rack="r2",region="eu-central"} 1876543210 1714320000000
+
+# HELP node_network_receive_bytes_total Network receive bytes
+# TYPE node_network_receive_bytes_total counter
+node_network_receive_bytes_total{device="eth0",server="r4-n3",rack="r4",region="eu-central"} 8765432109 1714320000000
+
+# HELP node_network_transmit_bytes_total Network transmit bytes
+# TYPE node_network_transmit_bytes_total counter
+node_network_transmit_bytes_total{device="eth0",server="r4-n3",rack="r4",region="eu-central"} 7654321098 1714320000000
+
+# HELP kubernetes_pods_running Number of pods running
+# TYPE kubernetes_pods_running gauge
+kubernetes_pods_running{cluster="eu-central-prod",rack="r2"} 900 1714320000000
+kubernetes_pods_running{cluster="eu-central-prod",rack="r3"} 850 1714320000000
+
+# HELP service_http_requests_total HTTP requests per service
+# TYPE service_http_requests_total counter
+service_http_requests_total{service="web-app",method="GET",code="200",cluster="eu-central-prod"} 7654321 1714320000000
+service_http_requests_total{service="payment",method="POST",code="201",cluster="eu-central-prod"} 3456789 1714320000000
+
+# HELP service_latency_seconds Service latency histogram
+# TYPE service_latency_seconds histogram
+service_latency_seconds_bucket{service="web-app",le="0.1"} 700000
+service_latency_seconds_bucket{service="web-app",le="0.5"} 900000
+service_latency_seconds_bucket{service="web-app",le="1"} 970000
+service_latency_seconds_sum{service="web-app"} 43200.7
+service_latency_seconds_count{service="web-app"} 970000
+
+# HELP gpu_utilization_percent GPU utilization per server
+# TYPE gpu_utilization_percent gauge
+gpu_utilization_percent{gpu="0",server="r1-n2",rack="r1"} 55 1714320000000
+gpu_utilization_percent{gpu="1",server="r1-n2",rack="r1"} 60 1714320000000
+
+# HELP etcd_server_has_leader etcd cluster leadership
+# TYPE etcd_server_has_leader gauge
+etcd_server_has_leader{instance="etcd1",cluster="eu-central"} 1 1714320000000

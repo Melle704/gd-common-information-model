@@ -1,0 +1,47 @@
+# HELP dc_temp_c Temperature per rack (°C)
+# TYPE dc_temp_c gauge
+dc_temp_c{rack="A1",region="ap-south"} 28.7 1714320000000
+dc_temp_c{rack="A2",region="ap-south"} 29.1 1714320000000
+
+# HELP dc_power_w Power usage per rack (W)
+# TYPE dc_power_w gauge
+dc_power_w{rack="A1",region="ap-south"} 15800 1714320000000
+dc_power_w{rack="A2",region="ap-south"} 16050 1714320000000
+
+# HELP dc_pue Power Usage Effectiveness
+# TYPE dc_pue gauge
+dc_pue 1.50 1714320000000
+
+# HELP node_cpu_usage Percent CPU usage per server
+# TYPE node_cpu_usage gauge
+node_cpu_usage{server="A1-n1",rack="A1"} 78 1714320000000
+node_cpu_usage{server="A2-n1",rack="A2"} 82 1714320000000
+
+# HELP node_memory_free_bytes Free memory per server
+# TYPE node_memory_free_bytes gauge
+node_memory_free_bytes{server="A1-n1",rack="A1"} 4294967296 1714320000000
+node_memory_free_bytes{server="A2-n1",rack="A2"} 2147483648 1714320000000
+
+# HELP node_disk_read_ops_total Disk reads (ops)
+# TYPE node_disk_read_ops_total counter
+node_disk_read_ops_total{device="sdb",server="A1-n2",rack="A1"} 1234567 1714320000000
+
+# HELP node_disk_write_ops_total Disk writes (ops)
+# TYPE node_disk_write_ops_total counter
+node_disk_write_ops_total{device="sdb",server="A1-n2",rack="A1"} 2345678 1714320000000
+
+# HELP api_requests_total API gateway total
+# TYPE api_requests_total counter
+api_requests_total{api="v2",method="GET",region="ap-south"} 23456789 1714320000000
+
+# HELP storage_status Storage health (1=up)
+# TYPE storage_status gauge
+storage_status{server="A2-storage1",rack="A2",region="ap-south"} 1 1714320000000
+
+# HELP db_conn_active Active DB connections
+# TYPE db_conn_active gauge
+db_conn_active{db="mysql",server="A1-db1",rack="A1"} 55 1714320000000
+
+# HELP load_avg_1 1-min load average
+# TYPE load_avg_1 gauge
+load_avg_1{server="A2-n2",rack="A2"} 1.8 1714320000000
